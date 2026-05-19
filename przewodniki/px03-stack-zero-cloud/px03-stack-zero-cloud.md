@@ -295,6 +295,27 @@ Wybór poziomu i harmonogram - z tego podręcznika. Pełne wdrożenie produkcyjn
 
 Ten podręcznik daje Ci procedurę i artefakty. Wdrożenie sześciu warstw w działającej kancelarii, z odpowiedzialnością za ciągłość pracy i zgodność - to robimy z Tobą. Jeśli chcesz przejść od podręcznika do wdrożenia, napisz: kontakt@matematic.co.
 
+## Narzędzia stacku - zweryfikowane repozytoria
+
+Każde narzędzie instaluj wyłącznie z oficjalnego repozytorium. Poniższe linki zweryfikowano przez GitHub API: projekty aktywne, nie forki, nie archiwa.
+
+- **gogcli** - backup Google Workspace. Licencja MIT. https://github.com/openclaw/gogcli
+- **Chandra OCR** - OCR skanów akt. Licencja Apache-2.0. https://github.com/datalab-to/chandra
+- **noScribe** - transkrypcja lokalna. Licencja GPL-3.0. https://github.com/kaixxx/noScribe
+- **DocuSeal** - e-podpis dokumentów. Licencja AGPL-3.0. https://github.com/docusealco/docuseal
+- **AppFlowy** - notatki i bazy spraw. Licencja AGPL-3.0. https://github.com/AppFlowy-IO/AppFlowy
+- **Cline** - asystent AI w edytorze. Licencja Apache-2.0. https://github.com/cline/cline
+- **Ollama** - uruchamianie modeli AI lokalnie. Licencja MIT. https://github.com/ollama/ollama
+
+### Uwaga - podróbka noScribe
+
+Oficjalne noScribe to wyłącznie repozytorium powyżej. Domena noscribe.ai to osobny, niepowiązany serwis sprzedający transkrypcję w chmurze - autor noScribe wprost odradza korzystanie z niej. Instaluj tylko z GitHuba.
+
+### Obsidian - uwaga licencyjna
+
+Wspomniany w module 5 Obsidian nie jest oprogramowaniem open source - to bezpłatny program o zamkniętym kodzie. Otwartą, audytowalną alternatywą do notatek jest AppFlowy i to ona należy do stacku zero-cloud.
+
 ## Changelog
 
+- v1.1 (2026-05-19) - dodana sekcja "Narzędzia stacku" z linkami do zweryfikowanych repozytoriów.
 - v1.0 (2026-05-25) - pierwsza publikacja. 7 modułów, 7 artefaktów do pobrania.
