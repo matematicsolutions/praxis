@@ -21,6 +21,7 @@ jest jego domem.
 | Kod | Przewodnik | Format | Wersja webowa |
 |-----|-----------|--------|---------------|
 | PX/03 | [Stack zero-cloud dla kancelarii](przewodniki/px03-stack-zero-cloud/) | Podrecznik | [matematicsolutions.com](https://matematicsolutions.com/akademia/px03-stack-zero-cloud.html) |
+| PX/04 | [Skille weryfikacji do Claude](przewodniki/px04-skille-weryfikacji-claude/) | Skille | [matematicsolutions.com](https://matematicsolutions.com/akademia/px04-skille-weryfikacji-claude.html) |
 
 Kolejne pozycje w przygotowaniu (Audyt RODO art. 32 dla AI, Workspace dla solo prawnika, MCP scoping).
 
