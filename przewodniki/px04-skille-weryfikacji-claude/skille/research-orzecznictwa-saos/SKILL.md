@@ -1,3 +1,8 @@
+---
+name: research-orzecznictwa-saos
+description: Prowadzi research orzecznictwa na realnym źródle (SAOS) zamiast sygnatur z pamięci modelu - zapytanie do bazy, praca tylko na pobranym tekście i źródło każdej tezy. Używaj, gdy ktoś prosi „znajdź orzecznictwo do art.”, „jakie są wyroki w tej sprawie”, „linia orzecznicza”, „sygnatury do pisma”.
+---
+
 # Skill 03: Research orzecznictwa z realnego źródła (SAOS)
 
 > Skill MateMatic do wgrania do Claude. Wersja DEMO lead magnetu.

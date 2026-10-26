@@ -1,3 +1,8 @@
+---
+name: anonimizacja-przed-ai
+description: Pomaga zastąpić dane identyfikujące klienta pseudonimami przed wysłaniem tekstu do AI w chmurze, z mapą pseudonimów, która zostaje w kancelarii. To pseudonimizacja, a nie anonimizacja. Używaj, gdy ktoś pyta „jak bezpiecznie wkleić sprawę do AI”, „usuń dane klienta przed wysłaniem”, „zanonimizuj tekst”, „dane osobowe a chmura”.
+---
+
 # Skill 05: Anonimizacja danych przed wrzuceniem do AI
 
 > Skill MateMatic do wgrania do Claude. Wersja DEMO lead magnetu.
@@ -5,6 +10,10 @@
 ## Po co to
 
 Gdy wklejasz fragment sprawy do narzędzia AI w chmurze, treść wychodzi poza kancelarię. Zapytanie prawnika rzadko jest abstrakcyjne - częściej niesie dane, po których da się rozpoznać klienta. To przetwarzanie danych (art. 5 ust. 1 lit. b i art. 28 RODO) i materia tajemnicy zawodowej (art. 6 Prawa o adwokaturze, art. 3 ustawy o radcach prawnych), która nie zna wyjątku "bo pytałem AI". Ten skill każe Ci oczyścić tekst, zanim cokolwiek wyśle.
+
+## Uwaga: to pseudonimizacja
+
+Zamiana danych na pseudonimy z mapą, która zostaje u Ciebie, to pseudonimizacja, a nie anonimizacja. Dopóki mapa istnieje, tekst nadal dotyczy możliwej do zidentyfikowania osoby (motyw 26 RODO) i nadal jest materią tajemnicy zawodowej. Zamianę rób u siebie, zanim tekst trafi do modelu w chmurze: jeśli wkleisz surowy dokument do Claude, żeby wykrył identyfikatory, dane już opuściły kancelarię. Do tego kroku użyj narzędzia lokalnego albo planu zamiany przygotowanego bez wklejania dokumentu.
 
 ## Workflow
 
@@ -15,7 +24,7 @@ Gdy wklejasz fragment sprawy do narzędzia AI w chmurze, treść wychodzi poza k
 
 ## Reguła
 
-Pisz każde zapytanie tak, jakby czytał je ktoś z drugiej strony stołu. Jeśli po anonimizacji nadal da się rozpoznać klienta - nie wysyłaj, oczyść głębiej.
+Pisz każde zapytanie tak, jakby czytał je ktoś z drugiej strony stołu. Jeśli po zamianie danych nadal da się rozpoznać klienta - nie wysyłaj, oczyść głębiej.
 
 ## Format wyniku
 

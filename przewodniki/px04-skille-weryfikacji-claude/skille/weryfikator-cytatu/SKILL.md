@@ -1,3 +1,8 @@
+---
+name: weryfikator-cytatu
+description: Każe Claude udowodnić każdy cytat i każdą sygnaturę w tekście prawnym według gradientu ISTNIENIE, TREŚĆ, FRAGMENT, zamiast wierzyć modelowi na słowo. Używaj przed wysłaniem opinii, pisma albo memo z cytatami, gdy ktoś prosi „sprawdź cytaty”, „czy ten wyrok istnieje”, „zweryfikuj sygnatury”, „czy to jest w uzasadnieniu”. Pracuje na wklejonym źródle i nie zastępuje porady prawnej.
+---
+
 # Skill 01: Weryfikator cytatu prawnego (anti-halucynacja)
 
 > Skill MateMatic do wgrania do Claude (projekt / Claude Code). Wersja DEMO lead magnetu.

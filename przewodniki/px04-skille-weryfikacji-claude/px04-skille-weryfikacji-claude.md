@@ -1,11 +1,11 @@
 # PX/04 - Skille weryfikacji do Claude dla kancelarii
 
 > Praxis - przewodniki praktyczne MateMatic. Podtyp: podręcznik proceduralny (skille).
-> Wersja v1.0. Wersja webowa: https://matematicsolutions.com/akademia/px04-skille-weryfikacji-claude.html
+> Wersja v1.1. Wersja webowa: https://matematicsolutions.com/akademia/px04-skille-weryfikacji-claude.html
 > Licencja: CC BY-SA 4.0. Uwagi i poprawki: GitHub Issues / Pull Requests.
 > Otwarty kod pięciu skilli: katalog ./skille/ w tym repozytorium.
 
-**Eyebrow:** Akademia · Praxis · Skille · v1.0
+**Eyebrow:** Akademia · Praxis · Skille · v1.1
 **Kod:** PX/04
 **Status MateMatic:** otwarte
 **Format:** 5 skilli .md do wgrania do Claude
@@ -62,7 +62,7 @@ Gradient weryfikacji - trzy poziomy: **ISTNIENIE** (sygnatura, data, organ realn
 
 Procedura: (1) wypisz wszystkie powołania; (2) ustal wymagany poziom (cudzysłów -> FRAGMENT, parafraza -> TREŚĆ, "por. sygnatura" -> ISTNIENIE); (3) sprawdź wobec źródła string-matchem znormalizowanego tekstu - match jest albo go nie ma; (4) pułapka zmyślonej sygnatury: nierozwiązana kotwica = flaga czerwona, nie luka; (5) pułapka prawdziwy-cytat-fałszywa-teza: parafrazę sprawdź na poziomie TREŚĆ; (6) kalibracja: nie podnoś siły twierdzenia ponad osiągnięty poziom.
 
-Pełny skill: [skille/01-weryfikator-cytatu.md](skille/01-weryfikator-cytatu.md).
+Pełny skill: [skille/weryfikator-cytatu/SKILL.md](skille/weryfikator-cytatu/SKILL.md).
 
 ---
 
@@ -70,7 +70,7 @@ Pełny skill: [skille/01-weryfikator-cytatu.md](skille/01-weryfikator-cytatu.md)
 
 Najpierw sklasyfikuj zadanie (stawka, złożoność), potem dobierz narzędzia. Ścieżki: rutyna -> zwykła odpowiedź; cytaty -> Weryfikator cytatu (Skill 01); high-stakes -> red-team (Skill 04) + weryfikacja; dane wrażliwe -> najpierw anonimizacja (Skill 05). Sprawdź wejście: cel, podmiot, fakty, ograniczenia; brak -> pytania do klienta przed startem.
 
-Pełny skill: [skille/02-triage-zadania.md](skille/02-triage-zadania.md).
+Pełny skill: [skille/triage-zadania/SKILL.md](skille/triage-zadania/SKILL.md).
 
 ---
 
@@ -78,7 +78,7 @@ Pełny skill: [skille/02-triage-zadania.md](skille/02-triage-zadania.md).
 
 Lekarstwem na zmyślone sygnatury nie jest lepszy prompt, tylko realne źródło. SAOS (System Analizy Orzeczeń Sądowych, Fundacja ePaństwo) to darmowa baza orzeczeń SN, TK, KIO i sądów powszechnych z API. Nie pytaj modelu o sygnatury z pamięci - pobierz realne trafienia, pracuj na pobranym tekście, oznacz proweniencję. Sygnatura, której nie pobrałeś z bazy, nie istnieje, dopóki jej nie znajdziesz.
 
-Pełny skill: [skille/03-research-orzecznictwa-saos.md](skille/03-research-orzecznictwa-saos.md).
+Pełny skill: [skille/research-orzecznictwa-saos/SKILL.md](skille/research-orzecznictwa-saos/SKILL.md).
 
 ---
 
@@ -86,7 +86,7 @@ Pełny skill: [skille/03-research-orzecznictwa-saos.md](skille/03-research-orzec
 
 Zaatakuj własną tezę, zanim zrobi to przeciwnik albo sąd. Cztery role po kolei: **builder** (najmocniejsza wersja tezy), **attacker** (atak bez litości - kontrargumenty, kontr-orzecznictwo, luki), **synthesizer** (które ataki wymagają zmiany pisma), **verifier** (czy teza się trzyma, czy kontr-orzecznictwo prawdziwe). Tylko dla spraw wysokiej stawki - triage podpowie, czy warto.
 
-Pełny skill: [skille/04-red-team-pisma.md](skille/04-red-team-pisma.md).
+Pełny skill: [skille/red-team-pisma/SKILL.md](skille/red-team-pisma/SKILL.md).
 
 ---
 
@@ -96,13 +96,17 @@ Wklejając sprawę do AI w chmurze, treść wychodzi poza kancelarię. To przetw
 
 *Interpretacja MateMatic, nie stanowisko PUODO, NRA ani KRRP.*
 
-Pełny skill: [skille/05-anonimizacja-przed-ai.md](skille/05-anonimizacja-przed-ai.md).
+Pełny skill: [skille/anonimizacja-przed-ai/SKILL.md](skille/anonimizacja-przed-ai/SKILL.md).
 
 ---
 
 ## Moduł 6 - Złożenie: jak wgrać i używać
 
-Każdy skill to plik tekstowy. Wgrywasz raz, używasz w nieskończoność. Dwie ścieżki: **Claude.ai** (wklej treść skilla do instrukcji projektu) albo **Claude Code** (plik jako skill w katalogu skilli).
+Każdy skill to folder z plikiem SKILL.md, którego nagłówek ma pola name i description. Wgrywasz raz, używasz w nieskończoność. Trzy ścieżki:
+
+- **Projekt w Claude.ai** - wklej treść skilla do instrukcji projektu (Project instructions).
+- **Skill w Claude.ai** - wgraj folder skilla spakowany do ZIP, każdy skill osobno. Dostępność skilli zależy od planu i włączonego wykonywania kodu: https://support.claude.com/en/articles/12512180-using-skills-in-claude
+- **Claude Code** - skopiuj folder skilla do `~/.claude/skills/`, np. `~/.claude/skills/weryfikator-cytatu/SKILL.md`.
 
 Kolejność: (1) Triage (S02) - czy zadanie wymaga cięższej weryfikacji; (2) Anonimizacja (S05) - jeśli wejście niesie dane klienta; (3) Research z SAOS (S03) - do orzecznictwa; (4) Weryfikator cytatu (S01) - przed wysłaniem każdego pisma z cytatami, bramka nienegocjowalna; (5) Red-team (S04) - dla spraw wysokiej stawki, na koniec.
 
@@ -120,4 +124,5 @@ Skille są narzędziem kontroli wyniku AI, nie zastępują porady prawnej. Weryf
 
 ## Changelog
 
+- v1.1 (2026-10-26) - skille jako foldery z SKILL.md (nagłówek name i description), więc wgrywają się natywnie w Claude.ai i Claude Code; moduł 6 z trzema ścieżkami wgrania; Skill 05 z zastrzeżeniem, że zamiana danych z mapą to pseudonimizacja, nie anonimizacja.
 - v1.0 (2026-06-11) - pierwsza publikacja. 7 modułów, 5 skilli do pobrania (katalog ./skille/).

@@ -1,3 +1,8 @@
+---
+name: red-team-pisma
+description: Atakuje tezę pisma w czterech rolach (builder, attacker, synthesizer, verifier), zanim zrobi to przeciwnik albo sąd. Używaj w sprawach wysokiej stawki - opinia, memo DD, pismo procesowe, rekomendacja dla zarządu - gdy ktoś prosi „red team”, „co powie druga strona”, „zaatakuj tę tezę”. Nie używaj przy rutynie.
+---
+
 # Skill 04: Red-team pisma (co powie druga strona)
 
 > Skill MateMatic do wgrania do Claude. Wersja DEMO lead magnetu.

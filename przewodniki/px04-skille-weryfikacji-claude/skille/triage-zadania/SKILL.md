@@ -1,3 +1,8 @@
+---
+name: triage-zadania
+description: Najpierw klasyfikuje zadanie prawne według stawki, złożoności i danych wrażliwych, potem dobiera ścieżkę i poziom kontroli - zwykła odpowiedź, weryfikacja cytatów, red-team albo oczyszczenie danych. Używaj na początku nowego zlecenia, gdy ktoś pyta „od czego zacząć”, „czy to wymaga weryfikacji”, „ile kontroli tu trzeba”, „czy mam dość informacji”.
+---
+
 # Skill 02: Triage zadania prawnego (która ścieżka, ile kontroli)
 
 > Skill MateMatic do wgrania do Claude. Wersja DEMO lead magnetu.
